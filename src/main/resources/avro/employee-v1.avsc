@@ -1,0 +1,13 @@
+{
+  "namespace": "com.example",
+  "type": "record",
+  "name": "Employee",
+  "doc" : "Represents an Employee at a company",
+  "fields": [
+    {"name": "firstName", "type": "string", "doc": "The persons given name"},
+    {"name": "lastName", "type": "string"},
+    {"name": "age",  "type": "int", "default": -1},
+    {"name": "emails", "default":[], "type":{"type": "array", "items": "string"}},
+    {"name": "phoneNumber",  "type": "string"}
+  ]
+}
